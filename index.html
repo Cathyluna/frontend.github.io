@@ -1,51 +1,174 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
-  <title>CSS Cheatsheet</title>
-
-  <!--
-  <link rel="stylesheet" type="text/css" href="./resource/css/reset.css" />
-  -->
-
+  <title>My CSS Website Design Cheatsheet</title>   
   <link rel="stylesheet" type="text/css" href="./resource/css/style.css" />
-  
+  <!--Google Fonts谷歌字体-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Noto+Sans+SC:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!--Header-->
+  <!--Header: 1.导航logo图标 2.网站标题 3.导航按钮-->
   <header>
     <nav>
       <div class="nav-logo">
         <img src="./resource/images/nav-logo.png" alt="navigator's logo"/>
       </div>
-      <ul>
-        <li><a href="#">Learning Resources</a></li>
-        <li><a href="#">Cheatsheet Chapters</a></li>
-        <li><a href="#">Useful Tools</a></li>
+      <h1 class="website-title">My Website CSS Design Style</h1>
+      <ul class="nav-button">
+        <li><a class="button-type1" href="#colors">Colors</a></li>
+        <li><a class="button-type1" href="#fonts">Fonts</a></li>
+        <li><a class="button-type1" href="#text-design">Text Design</a></li>
+        <li><a class="button-type1" href="#more-info">More Info</a></li>
       </ul>
     </nav>
   </header>
 
-  <!--Banner-->
+  <!--Banner: 1.欢迎动图 2.欢迎文字 3.网站介绍-->
   <div class="banner">
-    <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" alt="Dacing ice cream"/>
-    <h1 lang="zh">欢迎来到我的网站！<br/> 这里是我的学习笔记！</h1>
-    <p>Welcome to my website! <br/> This is my cheatsheet of CSS!</p>
+    <img class="welcome-gif" src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" alt="Dacing ice cream"/>
+    <div class="welcome-text">
+      <h2 lang="zh">欢迎来到我的网站！</h2>
+      <h2 lang="zh">这里是我的学习笔记！</h2>
+      <h2>Welcome to my website! This is my cheatsheet of CSS!</h2>
+      <div class="website-introduction">
+        <p>website shows what I learned from Codecademy in Front-End Engineer Course. </p>
+        <p>As the side bar shows, there are 4 part of this article: Colors, Fonts, Text Design and More Info.</p>
+      </div>
+    </div>
   </div>
   
-  <!--Learning Resources-->
+  <!--Colors-->
+  <div id="colors" class="container">
+    <h2>Colors</h2>
+    <!--Part 1: Color theory-->
+    <div class="color-theory">
+      <h3>Color Theory</h3>
+      <!--介绍Color-wheel-->
+      <div class="color-wheel">
+        <h4>Color Wheel</h4>
+        <p>
+          This is the introduction picture about color wheel and here is <a href="https://color.adobe.com/zh/create/color-wheel" title="Adobe website for you to catch color in color wheel." target="_blank">Adobe Color Wheel</a>.
+        </p>
+        <img src="./resource/images/color-wheel.png" alt="Color Wheel"/>
+      </div>
+    </div>
+    
+    <!--Part 2: Color examples-->
+    <div class="color-examples">
+      <h4>Color Examples</h4>
+      <p>Let's take some Colors as examples! Hover and check color code!</p>
+      <ul class="color-box-list">
+        <li class="color-box LightCoral">
+          <div class="color-name">LightCoral</div>
+          <div class="color-code">#F08080</div>
+        </li>
+        <li class="color-box Moccasin">
+          <div class="color-name">Moccasin</div>
+          <div class="color-code">#FFE4B5</div>
+        </li>
+        <li class="color-box MediumSlateBlue">
+          <div class="color-name">MediumSlateBlue</div>
+          <div class="color-code">#7B68EE</div>
+        </li>
+        <li class="color-box MediumSeaGreen">
+          <div class="color-name">MediumSeaGreen</div>
+          <div class="color-code">#3CB371</div>
+        </li>
+        <li class="color-box Teal">
+          <div class="color-name">Teal</div>
+          <div class="color-code">#008080</div>
+        </li>
+        <li class="color-box LightSteelBlue">
+          <div class="color-name">LightSteelBlue</div>
+          <div class="color-code">#B0C4DE</div>
+        </li>
+      </ul>
+    </div>
+
+    <!--Part 3 Resources-->
+    <div class="color-resources">
+      <h3>Resources</h3>
+      <p>Here are some resources for you to know colors better.</p>
+      <ol>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank">MDN: Color</a></li>
+        <li><a href="http://www.colors.commutercreative.com/grid/" target="_blank">Named CSS Color</a></li>
+        <li><a href="https://color.cloudflare.design/" target="_blank">Color Desgin</a></li>
+        <li><a href="https://webaim.org/resources/contrastchecker/" target="_blank">Contrast Checker</a></li>
+      </ol>
+    </div>
+  </div>
+
+  <!--Fonts-->
+  <div id="fonts" class="container">
+    <h2>Fonts</h2>
+    <div class="font-container">
+      <div class="font-panel EB-Garamond">
+        <p class="font-lable">EB Garamond</p>
+        <p class="regular">Life is more than endless struggle.</p>
+        <p class="bold">Life is more than endless struggle.</p>
+        <p class="italic">Life is more than endless struggle.</p>
+      </div>
+      <div class="font-panel Raleway">
+        <p class="font-lable">Raleway</p>
+        <p class="regular">Life is more than endless struggle.</p>
+        <p class="bold">Life is more than endless struggle.</p>
+        <p class="italic">Life is more than endless struggle.</p>
+      </div>
+      <div class="font-panel Noto-Sans-SC">
+        <p class="font-lable">Noto Sans SC</p>
+        <p class="regular">这是一段测试文字，用于观察字体。</p>
+        <p class="bold">这是一段测试文字，用于观察字体。</p>
+        <p class="italic">这是一段测试文字，用于观察字体。</p>
+      </div>
+      <div class="font-panel Noto-Serif-SC">
+        <p class="font-lable">Noto Serif SC</p>
+        <p class="regular">这是一段测试文字，用于观察字体。</p>
+        <p class="bold">这是一段测试文字，用于观察字体。</p>
+        <p class="italic">这是一段测试文字，用于观察字体。</p>
+      </div>
+    </div>
+  </div>
 
 
-  <!--Cheatsheet Chapters-->
-
-
-  <!--Useful Tools-->
-
+  <!--Text Design-->
+  <div id="text-design" class="container">
+    <h2>Text Design</h2>
+    <div class="text-container"> 
+      <div class="text-pannel">
+        <h1>H1: Main page heading</h1>
+        <ul>
+          <li>Font-fammliy: Raleway</li>
+          <li>Font-size: 35px</li>
+          <li>Font-weight: 700(bold)</li>
+        </ul>
+      </div>
+      <div class="text-pannel">
+        <h2>H2: Subheading</h2>
+        <ul>
+          <li>Font-fammliy: Nunito</li>
+          <li>Font-size: 25px</li>
+          <li>Font-weight: 700(bold)</li>
+        </ul>
+      </div>
+      <div class="text-pannel">
+        <p>P: Paragraph text</p>
+        <ul>
+          <li>Font-fammliy: Nunito</li>
+          <li>Font-size: 18px</li>
+          <li>Font-weight: 400(regular)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <!--Footer-->
-  <footer>
-
+  <footer id="more-info">
+    <h2>For more information, please visit <a class="button-type2" href="https://www.codecademy.com/" target="_blank">Codecademy</a></h2>
+    <h2>Author: <a class="button-type2" href="https://github.com/Cathyluna/frontend.github.io" target="_blank">Cathy</a></h2>
   </footer>
 
 </body>
